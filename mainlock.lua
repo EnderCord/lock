@@ -43,6 +43,7 @@ local function activateAimAssist()
     aimAssistActive = true
     toggleButton.Text = "Disable Velo.CC"
     toggleButton.BackgroundColor3 = Color3.fromRGB(200, 50, 50)
+    print(".gg/7vauyHTZj7")
 
     aimAssistConnection = RunService.RenderStepped:Connect(function()
         local closestPlayer = getClosestPlayer()
@@ -58,6 +59,7 @@ local function deactivateAimAssist()
     aimAssistActive = false
     toggleButton.Text = "Velo.CC"
     toggleButton.BackgroundColor3 = Color3.fromRGB(50, 200, 50)
+    print(".gg/ZrZwjPR34D Velo.CC owns you")
 
     if aimAssistConnection then
         aimAssistConnection:Disconnect()
